@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Whalewatching | Edward Cheng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <style type="text/css">
 
@@ -43,9 +44,17 @@
     position: relative;
     height: 10px;
     background-image: url("asset/sawtooth.png");
+    background-size: 12px 10px;
     background-repeat: repeat-x;
     background-position: -3px 0;
     background-color: #fafafa;
+  }
+  @media 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
+    article:before {
+      background-image: url("asset/sawtooth@2x.png");
+    }
   }
 
   footer {
@@ -54,7 +63,6 @@
 
   section {
     padding: 0 2em;
-    text-align: justify;
   }
   section:before,
   section:after {
